@@ -28,7 +28,7 @@ getgenv().MelatoninUIConfig = {
 local LocalPlayer,MelatoninModule,MelatoninUI,MelatoninGameFrame = cloneref(game:GetService("Players").LocalPlayer),loadstring(game:HttpGet("https://raw.githubusercontent.com/Awakenchan/MelatoninLoader/refs/heads/main/Melatonin.lua"))()
 
 
-Melatonin.LoadingEffect(3, LocalPlayer, {
+MelatoninModule.LoadingEffect(3, LocalPlayer, {
   {
     GameName = "CS:2 External",
     Image = "http://www.roblox.com/asset/?id=108227353249963",
@@ -37,7 +37,7 @@ Melatonin.LoadingEffect(3, LocalPlayer, {
     Url = "",
     Callback = function(frame, ui)
       print(frame,ui)
-      Melatonin.CloseGuiEffect(newUI)
+      MelatoninModule.CloseGuiEffect(newUI)
     end,
   },
 
